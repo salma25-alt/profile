@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding-bottom: 60px; 
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+header {
+  background-color: #ca216a;
+  border-bottom: 5px solid #f85d98;
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+}
+
+header h1 {
+  font-size: 2em;
+  letter-spacing: 1px;
+}
+
+
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 40px auto;
+  max-width: 900px;
+  background-color: #f7faff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px #e6a5be;
+  border: 2px solid #ca216a;
+  flex-wrap: wrap; 
+}
+
+
+.profilephoto img {
+  border-radius: 20px;
+  border: 3px solid #ca216a;
+  box-shadow: 0 4px 10px #e6a5be;
+  transition: transform 0.3s;
+}
+
+.profilephoto img:hover {
+  transform: scale(1.05);
+}
+
+
+
+h2 {
+  color: #ca216a;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+
+.all {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap; 
+  gap: 30px;
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+
+.one, .two, .three {
+  background-color: #fff;
+  border-radius: 30px;
+  height: auto;
+  width: 350px;
+  border: 3px solid #ca216a;
+  box-shadow: 0 4px 10px #e6a5be;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+
+.one:hover, .two:hover, .three:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 15px #ca216a66;
+}
+
+
+
+.one ul, .two ol, .three ul {
+  text-align: left;
+  list-style-position: inside;
+}
+
+.one li, .two li, .three li {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+
+
+a {
+  display: block;
+  text-align: center;
+  color: #ca216a;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 20px auto;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #f85d98;
+}
+
+
+
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+}
+
+
+
+
+@media (max-width: 900px) {
+  .profile {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .all {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .one, .two, .three {
+    width: 90%;
+  }
+
+  header h1 {
+    font-size: 1.6em;
+  }
+}
